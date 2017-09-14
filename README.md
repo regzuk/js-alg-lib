@@ -3,3 +3,4 @@ Different alghoritms
 
 Representaion:
 - Adjacency matrix
+- Adjacency list
