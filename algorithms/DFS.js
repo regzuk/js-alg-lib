@@ -35,6 +35,6 @@ function DFS (graph) {
     return graph;
 }
 
-var list = [[1, 3], [0, 2], [1, 4], [0], [2]];
+var list = [[1, 3], [0, 2], [1, 4], [0, 2]];
 var ex1 = getDataFromAdjList (list);
 ex1 = DFS(ex1);
