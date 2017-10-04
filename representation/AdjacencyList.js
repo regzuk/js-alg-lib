@@ -8,8 +8,7 @@ function edgeListToAdjList(edgeList, isDirected, isWeighted) {
     isDirected = isDirected || false;
     isWeighted = isWeighted || false;
 
-    var countVertex = edgeList.reduce(((x,y)=>x=(y[0] > x) ? y[0] :
-                            (y[1] > x) ? y[1] : x),0)+1;
+    var countVertex = edgeList.reduce(((x,y)=>x=Math.max(x, y[0], y[1])),0)+1;
     var adjList = new Array (countVertex);
     for (var i = 0; i < adjList.length; i++) adjList[i] = new Array ();
     edgeList.forEach(x => {
